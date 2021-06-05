@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.pixelbuilds.beinginmars.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/mainFragment_to_FHAZFragment"
+            app:destination="@id/FHAZFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/mainFragment_to_roverWebView"
+            app:destination="@id/roverWebView"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/mainFragment_to_RHAZFragment"
+            app:destination="@id/RHAZFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/mainFragment_to_mastFragment"
+            app:destination="@id/mastFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/mainFragment_to_CHEMCAMFragment"
+            app:destination="@id/CHEMCAMFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/mainFragment_to_NAVCAMFragment"
+            app:destination="@id/NAVCAMFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/mainFragment_to_PANCAMFragment"
+            app:destination="@id/PANCAMFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/FHAZFragment"
+        android:name="com.pixelbuilds.beinginmars.rovercameras.fhaz.FHAZFragment"
+        android:label="fragment_f_h_a_z"
+        tools:layout="@layout/fragment_f_h_a_z">
+        <action
+            android:id="@+id/action_FHAZFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/roverWebView"
+        android:name="com.pixelbuilds.beinginmars.rovercameras.RoverWebView"
+        android:label="fragment_rover_web_view"
+        tools:layout="@layout/fragment_rover_web_view">
+        <action
+            android:id="@+id/action_roverWebView_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RHAZFragment"
+        android:name="com.pixelbuilds.beinginmars.rovercameras.rhaz.RHAZFragment"
+        android:label="fragment_r_h_a_z"
+        tools:layout="@layout/fragment_r_h_a_z">
+        <action
+            android:id="@+id/action_RHAZFragment_to_mainFragment2"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mastFragment"
+        android:name="com.pixelbuilds.beinginmars.rovercameras.mast.MastFragment"
+        android:label="fragment_mast"
+        tools:layout="@layout/fragment_mast" />
+    <fragment
+        android:id="@+id/CHEMCAMFragment"
+        android:name="com.pixelbuilds.beinginmars.rovercameras.chemcam.CHEMCAMFragment"
+        android:label="fragment_c_h_e_m_c_a_m"
+        tools:layout="@layout/fragment_c_h_e_m_c_a_m" />
+    <fragment
+        android:id="@+id/NAVCAMFragment"
+        android:name="com.pixelbuilds.beinginmars.NAVCAMFragment"
+        android:label="fragment_n_a_v_c_a_m"
+        tools:layout="@layout/fragment_n_a_v_c_a_m" />
+    <fragment
+        android:id="@+id/PANCAMFragment"
+        android:name="com.pixelbuilds.beinginmars.PANCAMFragment"
+        android:label="fragment_p_a_n_c_a_m"
+        tools:layout="@layout/fragment_p_a_n_c_a_m" />
+    <fragment
+        android:id="@+id/webPageFragment"
+        android:name="com.pixelbuilds.beinginmars.WebPageFragment"
+        android:label="fragment_web_page"
+        tools:layout="@layout/fragment_web_page" >
+    </fragment>
+    <fragment
+        android:id="@+id/feedBackFragment"
+        android:name="com.pixelbuilds.beinginmars.FeedBackFragment"
+        android:label="fragment_feed_back"
+        tools:layout="@layout/fragment_feed_back" >
+        <action
+            android:id="@+id/feedBackFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"/>
+    </fragment>
+</navigation>

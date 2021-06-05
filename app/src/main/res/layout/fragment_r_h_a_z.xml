@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".rovercameras.rhaz.RHAZFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoftsemiblod"
+            android:text="@string/rear_hazard_avoidance_camera"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/sarysoft"
+            android:gravity="center"
+            android:text="@string/glimpse_rhaz"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="@+id/RHAZGlimpse"
+            app:layout_constraintStart_toStartOf="@+id/RHAZGlimpse"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZGlimpse" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZPhotosClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="144dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/photosClicked"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZTitle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZTotalPhotosClicked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toEndOf="@+id/RHAZPhotosClicked"
+            app:layout_constraintTop_toTopOf="@+id/RHAZPhotosClicked" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="144dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/location"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZMainDesc" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZMainJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="144dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/mainJob"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZLandingDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZStatusMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="144dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/status"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZTotalPhotosClicked" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZLaunchDateMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/launch_date"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZLaunchDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZLaunchEarthDateMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/earth_date"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZStatus" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZLandDateMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/landing_date"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZEarthDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZLaunchDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/RHAZLandDateMark"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZEarthDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZEarthDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/RHAZLaunchEarthDateMark"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZStatus" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZLandingDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/RHAZLaunchDateMark"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZLaunchDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZMainDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/fhazmainJobDescription"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toEndOf="@+id/RHAZMainJob"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZLandingDate" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/RHAZGlimpse"
+            app:layout_constraintEnd_toEndOf="@+id/RHAZGlimpse"
+            app:layout_constraintStart_toStartOf="@+id/RHAZGlimpse"
+            app:layout_constraintTop_toTopOf="@+id/RHAZGlimpse" />
+
+        <ImageView
+            android:id="@+id/RHAZGlimpse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZLocationDesc"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/RHAZStatusMark"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZTotalPhotosClicked" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZLocationDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/fhazlocationDesc"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/RHAZMain"
+            app:layout_constraintTop_toBottomOf="@+id/RHAZMainDesc" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/RHAZInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:src="@drawable/info_24"
+            app:layout_constraintBottom_toBottomOf="@+id/RHAZTitle"
+            app:layout_constraintStart_toEndOf="@+id/RHAZTitle"
+            app:layout_constraintTop_toTopOf="@+id/RHAZTitle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/RHAZExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/jetbrainsmonomediumn"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

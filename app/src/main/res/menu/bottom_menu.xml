@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/explore_24"
+        android:title="@string/insights" />
+    <item
+        android:id="@+id/webPageFragment"
+        android:icon="@drawable/article_24"
+        android:title="@string/vartha" />
+    <item
+        android:id="@+id/feedBackFragment"
+        android:icon="@drawable/feedback_24"
+        android:title="@string/feedback" />
+</menu>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".rovercameras.chemcam.CHEMCAMFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/CHEMCAMTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoftsemiblod"
+            android:text=""
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/sarysoft"
+            android:gravity="center"
+            android:text="@string/glimpse_chemcam"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="@+id/CHEMCAMGlimpse"
+            app:layout_constraintStart_toStartOf="@+id/CHEMCAMGlimpse"
+            app:layout_constraintTop_toBottomOf="@+id/CHEMCAMGlimpse" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/CHEMCAMPhotosClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="144dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/photosClicked"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CHEMCAMTitle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/CHEMCAMTotalPhotosClicked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toEndOf="@+id/CHEMCAMPhotosClicked"
+            app:layout_constraintTop_toTopOf="@+id/CHEMCAMPhotosClicked" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/CHEMCAMStatusMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="144dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/status"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CHEMCAMTotalPhotosClicked" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/CHEMCAMLaunchDateMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/launch_date"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CHEMCAMLaunchDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/CHEMCAMLaunchEarthDateMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/earth_date"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CHEMCAMStatus" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/CHEMCAMLandDateMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/landing_date"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CHEMCAMEarthDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/CHEMCAMLaunchDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/CHEMCAMLandDateMark"
+            app:layout_constraintTop_toBottomOf="@+id/CHEMCAMEarthDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/CHEMCAMEarthDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/CHEMCAMLaunchEarthDateMark"
+            app:layout_constraintTop_toBottomOf="@+id/CHEMCAMStatus" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/CHEMCAMLandingDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/CHEMCAMLaunchDateMark"
+            app:layout_constraintTop_toBottomOf="@+id/CHEMCAMLaunchDate" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/CHEMCAMGlimpse"
+            app:layout_constraintEnd_toEndOf="@+id/CHEMCAMGlimpse"
+            app:layout_constraintStart_toStartOf="@+id/CHEMCAMGlimpse"
+            app:layout_constraintTop_toTopOf="@+id/CHEMCAMGlimpse" />
+
+        <ImageView
+            android:id="@+id/CHEMCAMGlimpse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CHEMCAMLandingDate"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/CHEMCAMStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/CHEMCAMStatusMark"
+            app:layout_constraintTop_toBottomOf="@+id/CHEMCAMTotalPhotosClicked" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/CHEMCAMInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:src="@drawable/info_24"
+            app:layout_constraintBottom_toBottomOf="@+id/CHEMCAMTitle"
+            app:layout_constraintStart_toEndOf="@+id/CHEMCAMTitle"
+            app:layout_constraintTop_toTopOf="@+id/CHEMCAMTitle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/CHEMCAMExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/jetbrainsmonomediumn"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

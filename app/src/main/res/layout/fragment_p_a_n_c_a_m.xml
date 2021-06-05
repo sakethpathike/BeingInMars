@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".PANCAMFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/PANCAMTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoftsemiblod"
+            android:text=""
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/sarysoft"
+            android:gravity="center"
+            android:text="@string/glimpse_panCam"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="@+id/PANCAMGlimpse"
+            app:layout_constraintStart_toStartOf="@+id/PANCAMGlimpse"
+            app:layout_constraintTop_toBottomOf="@+id/PANCAMGlimpse" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/PANCAMPhotosClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="144dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/photosClicked"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PANCAMTitle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/PANCAMTotalPhotosClicked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toEndOf="@+id/PANCAMPhotosClicked"
+            app:layout_constraintTop_toTopOf="@+id/PANCAMPhotosClicked" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/PANCAMStatusMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="144dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/status"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PANCAMTotalPhotosClicked" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/PANCAMLaunchDateMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/launch_date"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PANCAMLaunchDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/PANCAMLaunchEarthDateMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/earth_date"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PANCAMStatus" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/PANCAMLandDateMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/landing_date"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PANCAMEarthDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/PANCAMLaunchDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/PANCAMLandDateMark"
+            app:layout_constraintTop_toBottomOf="@+id/PANCAMEarthDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/PANCAMEarthDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/PANCAMLaunchEarthDateMark"
+            app:layout_constraintTop_toBottomOf="@+id/PANCAMStatus" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/PANCAMLandingDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/PANCAMLaunchDateMark"
+            app:layout_constraintTop_toBottomOf="@+id/PANCAMLaunchDate" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/PANCAMGlimpse"
+            app:layout_constraintEnd_toEndOf="@+id/PANCAMGlimpse"
+            app:layout_constraintStart_toStartOf="@+id/PANCAMGlimpse"
+            app:layout_constraintTop_toTopOf="@+id/PANCAMGlimpse" />
+
+        <ImageView
+            android:id="@+id/PANCAMGlimpse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PANCAMLandingDate"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/PANCAMStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/PANCAMStatusMark"
+            app:layout_constraintTop_toBottomOf="@+id/PANCAMTotalPhotosClicked" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/PANCAMInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:src="@drawable/info_24"
+            app:layout_constraintBottom_toBottomOf="@+id/PANCAMTitle"
+            app:layout_constraintStart_toEndOf="@+id/PANCAMTitle"
+            app:layout_constraintTop_toTopOf="@+id/PANCAMTitle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/PANCAMExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/jetbrainsmonomediumn"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

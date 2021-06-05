@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Being In Mars</string>
+    <string name="rover_cameras">Rover Cameras</string>
+    <string name="front_hazard_avoidance_camera">Front Hazard Avoidance Camera</string>
+    <string name="rear_hazard_avoidance_camera">Rear Hazard Avoidance Camera</string>
+    <string name="mast_camera">Mast Camera</string>
+    <string name="chemcam">Chemistry And Camera Complex</string>
+    <string name="nav_cam">Navigation Camera</string>
+    <string name="pan_cam">Panoramic Camera</string>
+    <string name="the_cameras_on_the_mars_2020_perseverance_rover">The Cameras on the Mars 2020 Perseverance Rover</string>
+    <string name="total_cameras_23"><![CDATA[Total Cameras -> 23]]></string>
+    <string name="total_photos"><![CDATA[Total Images Captured ->  ]]></string>
+    <string name="engineering_cameras_9">Engineering Cameras -> 9</string>
+    <string name="science_cameras_7"><![CDATA[Science Cameras -> 7]]></string>
+    <string name="entry_descent_landing_cameras_7"><![CDATA[Entry, Descent, Landing Cameras -> 7]]></string>
+    <string name="error">Error</string>
+    <string name="astronomy_picture_of_the_day">Astronomy Picture Of The Day</string>
+    <string name="title">Title -> </string>
+    <string name="date">Date -> </string>
+    <string name="click_on_image_to_know_more_about_it">Click On Image To Know More About It. Once You Have Read About The Image Context You Can Click The Description/Context To Hide It[If You Want To Hide The Description/Context].</string>
+    <string name="frontHazardText">Front Hazard Avoidance Cameras Is The Part Of "Hazard Cameras" Which Is The Part Of "Engineer Camera's'": Perseverance carries six newly developed Hazard Detection Cameras, called HazCams: four on the front and two on the rear of the rover body. HazCams detect hazards to the front and back pathways of the rover, such as large rocks, trenches, or sand dunes. Engineers also use the front HazCams to see where to move the robotic arm to take measurements, photos, and collect rock and soil samples. When driving, the rover stops frequently to take new stereo images of the path ahead to evaluate potential hazards. The 3D views give Mars 2020 the ability to make its own decisions about where to drive without consulting on every move with the rover team on Earth.</string>
+    <string name="rearHazardText">Rear Hazard Avoidance Cameras Is The Part Of "Hazard Cameras" Which Is The Part Of "Engineer Camera's'": Perseverance carries six newly developed Hazard Detection Cameras, called HazCams: four on the front and two on the rear of the rover body. HazCams detect hazards to the front and back pathways of the rover, such as large rocks, trenches, or sand dunes. Engineers also use the front HazCams to see where to move the robotic arm to take measurements, photos, and collect rock and soil samples. When driving, the rover stops frequently to take new stereo images of the path ahead to evaluate potential hazards. The 3D views give Mars 2020 the ability to make its own decisions about where to drive without consulting on every move with the rover team on Earth.</string>
+    <string name="mastText">Mastcam-Z Is A Part Of Science Camera. It is a pair of cameras that takes color images and video, three-dimensional stereo images, and has a
+powerful zoom lens. Like the Mastcam cameras on the Curiosity rover, Mastcam-Z on Mars 2020 consists of two
+duplicate camera systems mounted on the mast that stands up from the rover deck. The cameras are next to
+each other and point in the same direction, providing a 3-D view similar to what human eyes would see, only
+better. They also have a zoom function to see details of faraway targets.</string>
+    <string name="mainJob">Main Job -> </string>
+    <string name="photosClicked">Total Photos Clicked -> </string>
+    <string name="fhazmainJobDescription">Aid in autonomous navigation.</string>
+    <string name="location">Location -> </string>
+    <string name="fhazlocationDesc">Mounted at the front and rear of the rover\'s body, pointing down toward the ground.</string>
+    <string name="fhazNote">Click On The Title To Know More About Front Hazard Avoidance Camera And Click The Description/Context To Hide The Description[If You Want To Hide].</string>
+    <string name="rhazNote">Click On The Title To Know More About Front Rear Avoidance Camera And Click The Description/Context To Hide The Description[If You Want To Hide].</string>
+    <string name="mastNote">Click On The Title To Know More About Mast Camera And Click The Description/Context To Hide The Description[If You Want To Hide].</string>
+    <string name="status"><![CDATA[Status ->]]></string>
+    <string name="glimpse_fhaz">Glimpse Of Front Hazard Avoidance Camera👆</string>
+    <string name="glimpse_rhaz">Glimpse Of Rear Hazard Avoidance Camera👆</string>
+    <string name="glimpse_chemcam">Glimpse Of CHEMCAM👆</string>
+    <string name="glimpse_navCam">Glimpse Of NAVCAM👆</string>
+    <string name="glimpse_panCam">Glimpse Of PANCAM👆</string>
+    <string name="glimpse_mast">Glimpse Of Mast Camera👆</string>
+    <string name="launch_date"><![CDATA[Launch Date ->]]></string>
+    <string name="landing_date"><![CDATA[Landing Date ->]]></string>
+    <string name="earth_date"><![CDATA[Earth Date ->]]></string>
+    <string name="insights">Insights</string>
+    <string name="vartha">Vartha</string>
+    <string name="feedback">FeedBack</string>
+</resources>

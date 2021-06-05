@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".rovercameras.mast.MastFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/MASTTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoftsemiblod"
+            android:text=""
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/sarysoft"
+            android:gravity="center"
+            android:text="@string/glimpse_mast"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="@+id/MASTGlimpse"
+            app:layout_constraintStart_toStartOf="@+id/MASTGlimpse"
+            app:layout_constraintTop_toBottomOf="@+id/MASTGlimpse" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/MASTPhotosClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="144dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/photosClicked"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MASTTitle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/MASTTotalPhotosClicked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toEndOf="@+id/MASTPhotosClicked"
+            app:layout_constraintTop_toTopOf="@+id/MASTPhotosClicked" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/MASTStatusMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="144dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/status"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MASTTotalPhotosClicked" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/MASTLaunchDateMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/launch_date"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MASTLaunchDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/MASTLaunchEarthDateMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/earth_date"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MASTStatus" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/MASTLandDateMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sarysoft"
+            android:text="@string/landing_date"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MASTEarthDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/MASTLaunchDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/MASTLandDateMark"
+            app:layout_constraintTop_toBottomOf="@+id/MASTEarthDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/MASTEarthDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/MASTLaunchEarthDateMark"
+            app:layout_constraintTop_toBottomOf="@+id/MASTStatus" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/MASTLandingDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/MASTLaunchDateMark"
+            app:layout_constraintTop_toBottomOf="@+id/MASTLaunchDate" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/MASTGlimpse"
+            app:layout_constraintEnd_toEndOf="@+id/MASTGlimpse"
+            app:layout_constraintStart_toStartOf="@+id/MASTGlimpse"
+            app:layout_constraintTop_toTopOf="@+id/MASTGlimpse" />
+
+        <ImageView
+            android:id="@+id/MASTGlimpse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MASTLandingDate"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/MASTStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/sarysoft"
+            android:text=""
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/MASTStatusMark"
+            app:layout_constraintTop_toBottomOf="@+id/MASTTotalPhotosClicked" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/MASTInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:src="@drawable/info_24"
+            app:layout_constraintBottom_toBottomOf="@+id/MASTTitle"
+            app:layout_constraintStart_toEndOf="@+id/MASTTitle"
+            app:layout_constraintTop_toTopOf="@+id/MASTTitle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/MASTExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/jetbrainsmonomediumn"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
